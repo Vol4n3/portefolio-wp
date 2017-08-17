@@ -1,0 +1,261 @@
+/*GENERAL rules*/
+.jc_container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.margin-x {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.padding-x {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.margin-y {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.padding-y {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+a:hover, a:visited {
+    color: inherit;
+}
+
+ul.list {
+    padding: 0;
+    margin: 0;
+}
+
+ul > li, ol > li {
+    margin: 0 5px;
+    padding: 5px;
+}
+
+ul.list > li {
+    list-style: none;
+}
+
+.middle {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+}
+
+h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center, span.center {
+    text-align: center;
+}
+
+.shadow {
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
+}
+
+.shadow-light {
+    filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.2));
+}
+
+.shadow-box {
+    -moz-box-shadow: 3px 3px 3px 0px #656565;
+    -webkit-box-shadow: 3px 3px 3px 0px #656565;
+    -o-box-shadow: 3px 3px 3px 0px #656565;
+    box-shadow: 3px 3px 3px 0px #656565;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=135, Strength=3);
+}
+
+.shadow-inset {
+    -moz-box-shadow: inset 5px 5px 3px 0px #656565;
+    -webkit-box-shadow: inset 5px 5px 3px 0px #656565;
+    -o-box-shadow: inset 5px 5px 3px 0px #656565;
+    box-shadow: inset 5px 5px 3px 0px #656565;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=135, Strength=3);
+}
+
+.hide {
+    display: none !important;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.full {
+    width: 100%;
+}
+
+.half {
+    width: 50%;
+}
+
+.tier {
+    width: calc(100% / 3);
+}
+
+.quarter {
+    width: 25%;
+}
+
+.fifth {
+    width: 20%;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.bg-fixed {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.round {
+    border-radius: 100%;
+}
+
+.through {
+    pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 25px 10px;
+    }
+}
+
+/*FLEXBOX*/
+.box {
+    display: flex;
+
+}
+
+.box.center {
+    justify-content: center;
+}
+
+.box.y-center {
+    align-items: center;
+}
+
+.box.between {
+    justify-content: space-between;
+}
+
+.box.around {
+    justify-content: space-around;
+}
+
+.box.wrap {
+    flex-wrap: wrap;
+}
+
+.box.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.box.down {
+    flex-direction: column;
+}
+
+.box.up {
+    flex-direction: column-reverse;
+}
+
+.box.inverse {
+    flex-direction: row-reverse;
+}
+
+.box > .spread {
+    flex-grow: 1;
+}
+
+.box.auto > * {
+    flex-grow: 1;
+}
+
+.box > .right {
+    margin-left: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .box.tablet-column {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .box.mobile-column {
+        flex-direction: column;
+    }
+}
+
+/*animation and transition*/
+.transition-color {
+    transition: color 0.2s ease-in-out;
+}
+
+.hover-growth {
+    transition: transform 0.2s ease-in-out;
+}
+
+.hover-growth:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.hover-growth.transition-color {
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    letter-spacing: 0.15rem;
+    user-select: none;
+    color: #000;
+    border: 1px solid #000;
+    padding: .7rem 1.8rem;
+    font-size: 1.05rem;
+    border-radius: 0;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    background-color: transparent;
+
+}
