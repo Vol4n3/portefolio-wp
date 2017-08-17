@@ -49,6 +49,7 @@
     <div class="bottom-header box y-center center">
         <div class="title-caption move-down box down y-center ">
             <h2 class="light margin-y">Code is my passion</h2>
+            <p>Website work in progress</p>
             <div>
                 <span class="btn margin-x btn-primary text-uppercase">Know more</span>
                 <span class="btn margin-x text-uppercase">Hire me</span>
