@@ -24,7 +24,7 @@ body {
 }
 .btn:hover {
     color: #4d4d4d;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0.2);
     border-color: #4d4d4d;
 }
 .btn-primary {
@@ -34,8 +34,8 @@ body {
 }
 .btn-primary:hover {
     color: #4d4d4d;
-    background-color: rgba(255,255,255,0.9);
-    border-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.6);
+    border-color: rgba(255,255,255,0.6);
 }
 .light{
     color: #fff;
@@ -93,10 +93,11 @@ body {
     z-index: 10;
 }
 .bottom-header{
-    height:350px;
+    height:440px;
     background-size: cover;
     background: url("../img/bg-sunset.jpg") no-repeat 50% -100px;
     overflow-y: hidden;
+
 }
 .bottom-header h2{
     font-size: 3.0rem;
@@ -202,7 +203,7 @@ header h2 {
 
 .nav-effect-cut > li:before {
     content: "";
-    transition: width 0.2s ease-in-out;
+    /*transition: width 0.2s ease-in-out;*/
     display: inline-block;
     position: absolute;
     width: 0%;
@@ -213,11 +214,28 @@ header h2 {
 }
 
 .nav-effect-cut > li:hover:before {
-    width: 100%;
+    animation: width-effect-cut 1.5s ease-in-out infinite;
 }
-
+@keyframes width-effect-cut {
+    0% {
+        width: 0%;
+    }
+    10%{
+        width: 100%;
+    }
+    40%{
+        left: auto;
+        right: 0;
+        width: 100%;
+    }
+    50%{
+        left: auto;
+        right: 0;
+        width: 0%;
+    }
+}
 .nav-effect-cut > li.drop:before {
-    left: inherit;
+    left: auto;
     right: 0;
 }
 
@@ -231,29 +249,59 @@ header h2 {
     display: inline-block;
     overflow: hidden;
     pointer-events: none;
-    transition: left 0.2s ease-in-out;
-    transition-delay: 0.2s;
 }
 
 .nav-effect-cut > li > .top {
     top: 5px;
     height: 39%;
-
 }
 
 .nav-effect-cut > li:hover > .top {
-    left: 7px;
+    animation: top-effect-cut 1.5s ease-in-out infinite ;
+    animation-delay: 0.2s;
 }
+@keyframes top-effect-cut  {
+    0% {
+        left: 5px;
+    }
+    10%{
+        left: 7px;
+        transform: rotate(2deg);
+        transform-origin: right;
+    }
+    40%{
+        left: 7px;
+    }
+    50%{
+        left: 5px;
 
+    }
+}
 .nav-effect-cut > li .bottom {
     bottom: 5px;
     height: 29%;
 }
 
 .nav-effect-cut > li:hover .bottom {
-    left: 3px;
+    animation: bottom-effect-cut 1.5s ease-in-out infinite ;
+    animation-delay: 0.2s;
 }
-
+@keyframes bottom-effect-cut  {
+    0% {
+        left: 5px;
+    }
+    10%{
+        left: 3px;
+        transform: rotate(-3deg);
+        transform-origin: right;
+    }
+    40%{
+        left: 3px;
+    }
+    50%{
+        left: 5px;
+    }
+}
 .nav-effect-cut > li .bottom a {
     position: relative;
     bottom: 128%;
