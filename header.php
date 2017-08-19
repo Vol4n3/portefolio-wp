@@ -17,16 +17,25 @@
 <header>
     <div class="top-header shadow-light">
         <div class="jc_container">
-            <nav class="box y-center">
+            <nav class="box y-center wrap">
                 <div class="logo">
-                    <?php $custom_logo_id = get_theme_mod( 'custom_logo' );
-                    $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-                    if($image) : ?>
-                    <img class="logo" src="<?php echo $image[0]; ?>">
-                    <?php endif;?>
+		            <?php $custom_logo_id = get_theme_mod( 'custom_logo' );
+		            $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+		            if($image) : ?>
+                        <img class="logo" src="<?php echo $image[0]; ?>">
+		            <?php endif;?>
+
+                </div>
+                <div class="box y-center between big-title">
+                    <div class="header-hide-effect"></div>
+                    <div>
+                        <h1><?php  echo bloginfo( 'name' ); ?></h1>
+                        <h2><?php echo get_bloginfo( 'description', 'display' ); ?></h2>
+                    </div>
                 </div>
                 <?php dynamic_sidebar( 'header-widget' ); ?>
                 <nav class="right">
+
 	                <?php wp_nav_menu(array(
 	                        'theme_location' => 'header-menu',
                             'container' => 'ul',
@@ -35,26 +44,11 @@
 	                )); ?>
                 </nav>
             </nav>
-            <div class="box y-center between big-title">
-                <div class="header-hide-effect"></div>
-                <div>
-                    <h1><?php  echo bloginfo( 'name' ); ?></h1>
-                    <h2><?php echo get_bloginfo( 'description', 'display' ); ?></h2>
-                </div>
-            </div>
+
         </div>
 
     </div>
     <div class="fix-top-header"></div>
-    <div class="bottom-header box y-center center">
-        <div class="title-caption move-down box down y-center ">
-            <h2 class="light margin-y">Code is my passion</h2>
-            <p>Website work in progress</p>
-            <div>
-                <span class="btn margin-x btn-primary text-uppercase">Know more</span>
-                <span class="btn margin-x text-uppercase">Hire me</span>
-            </div>
-        </div>
-    </div>
+
 
 </header>

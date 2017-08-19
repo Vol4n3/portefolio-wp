@@ -7,6 +7,38 @@
     position: relative;
 }
 
+html {
+    font-size: 1rem;
+}
+
+@media all and (max-width: 1500px) {
+    html {
+        font-size: 0.95rem;
+    }
+}
+
+@media all and (max-width: 1300px) {
+    html {
+        font-size: 0.9rem;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    html {
+        font-size: 0.8rem;
+    }
+}
+
+@media all and (max-width: 784px) {
+    html {
+        font-size: 0.7rem;
+    }
+}
+
+canvas {
+    display: block;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -258,4 +290,9 @@ img {
     cursor: pointer;
     background-color: transparent;
 
+}
+@media all and (max-width: 784px) {
+    .box.between {
+        justify-content: center;
+    }
 }

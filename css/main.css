@@ -13,7 +13,6 @@
 body {
     color: #4d4d4d;
     font-family: 'Muli', sans-serif;
-    font-size: 1.1rem;
     line-height: 1.2;
     background-color: black;
 }
@@ -29,16 +28,19 @@ body {
 }
 .btn-primary {
     color: #4d4d4d;
-    background-color: #fff;
-    border-color: #fff;
+    background-color: #e2e2e2;
+    border-color: #e2e2e2;
 }
 .btn-primary:hover {
     color: #4d4d4d;
-    background-color: rgba(255,255,255,0.6);
-    border-color: rgba(255,255,255,0.6);
+    background-color: rgba(226,226,226,0.6);
+    border-color: rgba(226,226,226,0.6);
 }
 .light{
-    color: #fff;
+    color: #e2e2e2;
+}
+.bg-light{
+    background-color: #e2e2e2;
 }
 .top-header {
     background-color: #e2e2e2;
@@ -60,7 +62,7 @@ body {
     opacity: 1;
     position: relative;
     z-index:100;
-    overflow-y: hidden;
+    overflow: hidden;
     transition: opacity 0.9s ease-in-out, max-height 0.6s ease;
     transition-delay: 0.75s;
     display: inline-block;
@@ -156,13 +158,27 @@ section li{
 .content{
     text-align: justify;
 }
-
+.upperline{
+    display: inline-block;
+    position: relative;
+    padding-top: 8px;
+}
+.upperline:before{
+    content: '';
+    display: inline-block;
+    height: 3px;
+    position: absolute;
+    left: -15px;
+    width: 40%;
+    top:0;
+    background-color: #fff ;
+}
 .top-header h1 {
     color: #4d4d4d;
-    background: linear-gradient(to top right, #e26c37 0%, #6b2300 39%, #63001a 62%, #e2a145 100%);
+    background: linear-gradient(to top right, #4d4d4d 0%, #e2e2e2 39%, #4d4d4d 62%, #e2e2e2 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-animation: hue-rotate 5s infinite linear ;
+    -webkit-animation: invert 5s infinite linear ;
     display: inline-block;
     font-size: 3rem;
     padding: 3px 0;
@@ -171,7 +187,9 @@ section li{
 header h2 {
     color: #909090;
 }
-
+header nav{
+    padding-bottom: 10px;
+}
 .header_img {
     border: #fff 10px solid;
 }
@@ -306,6 +324,19 @@ header h2 {
     position: relative;
     bottom: 128%;
 }
-.about{
-    background-color: #fff;
+#stars{
+    position: relative;
+    display: block;
+}
+#stars canvas{
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+.image-about-me{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    overflow: hidden;
+    z-index: 100;
 }
