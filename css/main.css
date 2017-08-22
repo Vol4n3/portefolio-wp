@@ -14,7 +14,7 @@ body {
     color: #4d4d4d;
     font-family: 'Muli', sans-serif;
     line-height: 1.2;
-    background-color: black;
+    background-color: #111;
 }
 .btn {
     color: #4d4d4d;
@@ -37,10 +37,10 @@ body {
     border-color: rgba(226,226,226,0.6);
 }
 .light{
-    color: #e2e2e2;
+    color: #f8f9fa;
 }
 .bg-light{
-    background-color: #e2e2e2;
+    background-color: #f8f9fa;
 }
 .top-header {
     background-color: #e2e2e2;
@@ -105,51 +105,7 @@ body {
     font-size: 3.0rem;
     font-weight: 100;
 }
-section h1{
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    font-weight: 900;
-}
-section h2{
-    font-size: 3.0rem;
-    margin-bottom: 3rem;
-    text-transform: uppercase;
-    font-weight: 900;
-    position: relative;
-    display: inline-block;
-    padding-top: 10px;
-    letter-spacing: 4px;
-    text-shadow: 3px 0 #4d4d4d;
-}
-section h2:before{
-    content: '';
-    display: inline-block;
-    position: absolute;
-    height: 0.3rem;
-    width: 50%;
-    top: 0px;
-    left:-20px;
-    background-color: #4d4d4d;
-}
-section h3{
-     font-size: 2.5rem;
-    font-weight: 900;
- }
-section h4{
-    font-size: 2.2rem;
-}
-section h5{
-    font-size: 2.0rem;
-}
-section h6{
-    font-size: 1.8rem;
-}
-section p{
-    font-size: 1.2rem;
-}
-section li{
-    font-size: 1.2rem;
-}
+
 .portrait-img img{
     width: 300px;
     margin-left: 100px;
@@ -169,9 +125,12 @@ section li{
     height: 3px;
     position: absolute;
     left: -15px;
-    width: 40%;
+    width: 60%;
     top:0;
-    background-color: #fff ;
+    background-color: #e2e2e2 ;
+}
+.upperline.dark:before{
+    background-color: #4d4d4d ;
 }
 .top-header h1 {
     color: #4d4d4d;
@@ -191,7 +150,7 @@ header nav{
     padding-bottom: 10px;
 }
 .header_img {
-    border: #fff 10px solid;
+    border: #e2e2e2 10px solid;
 }
 
 @keyframes invert {
@@ -226,13 +185,13 @@ header nav{
     position: absolute;
     width: 0%;
     height: 1px;
-    background-color: black;
+    background-color: #111;
     top: 55%;
     left: 0;
 }
 
 .nav-effect-cut > li:hover:before {
-    animation: width-effect-cut 1.5s ease-in-out infinite;
+    animation: width-effect-cut 3s ease-in-out infinite;
 }
 @keyframes width-effect-cut {
     0% {
@@ -270,12 +229,11 @@ header nav{
 }
 
 .nav-effect-cut > li > .top {
-    top: 5px;
-    height: 39%;
+    top: 0.3rem;
+    height: 0.7rem;
 }
-
 .nav-effect-cut > li:hover > .top {
-    animation: top-effect-cut 1.5s ease-in-out infinite ;
+    animation: top-effect-cut 3s ease-in-out infinite ;
     animation-delay: 0.2s;
 }
 @keyframes top-effect-cut  {
@@ -289,19 +247,21 @@ header nav{
     }
     40%{
         left: 7px;
+        transform-origin: right;
     }
     50%{
         left: 5px;
+        transform-origin: right;
 
     }
 }
 .nav-effect-cut > li .bottom {
-    bottom: 5px;
-    height: 29%;
+    bottom: 0.3rem;
+    height: 0.52rem;
 }
 
 .nav-effect-cut > li:hover .bottom {
-    animation: bottom-effect-cut 1.5s ease-in-out infinite ;
+    animation: bottom-effect-cut 3s ease-in-out infinite ;
     animation-delay: 0.2s;
 }
 @keyframes bottom-effect-cut  {
@@ -310,14 +270,23 @@ header nav{
     }
     10%{
         left: 3px;
-        transform: rotate(-3deg);
+        transform: rotate(-120deg);
         transform-origin: right;
     }
     40%{
         left: 3px;
+        transform: rotate(-75deg);
+        transform-origin: right;
     }
     50%{
         left: 5px;
+        transform: rotate(-120deg);
+        transform-origin: right;
+    }
+    70%{
+        left: 5px;
+        transform: rotate(0deg);
+        transform-origin: right;
     }
 }
 .nav-effect-cut > li .bottom a {
@@ -339,4 +308,36 @@ header nav{
     border-radius: 100%;
     overflow: hidden;
     z-index: 100;
+}
+.universe figcaption{
+    text-align: center;
+}
+.universe figure img {
+    max-height:64px ;
+    width:auto;
+}
+#chart-skill{
+    height:500px;
+    border: 1px solid #c0c0c0;
+    position: relative;
+}
+#chart-skill canvas{
+    position: absolute;
+    top:0;
+}
+#chart-skill .marking-level{
+    height: 100%;
+}
+#chart-skill .marking-level > div{
+    border-bottom:1px solid #c0c0c0;
+    position: relative;
+    background-color: #f3f3f3;
+}
+#chart-skill .marking-level > div > i{
+    transform: rotate(-90deg);
+    transform-origin: left;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: -0.6rem;
 }

@@ -43,7 +43,12 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
+.margin{
+    margin: 10px;
+}
+.padding{
+    padding: 10px;
+}
 .margin-x {
     margin-left: 10px;
     margin-right: 10px;
@@ -75,7 +80,7 @@ ul.list {
 
 ul > li, ol > li {
     margin: 0 5px;
-    padding: 5px;
+    padding: 0.32rem;
 }
 
 ul.list > li {
