@@ -8,7 +8,7 @@
 get_header();
 ?>
 <main>
-    <section id="stars">
+    <section id="stars" class="doSeeMe">
         <div class="jc_container padding-y">
             <div class="box between wrap relative y-center ">
                 <div class="half light">
@@ -55,45 +55,174 @@ get_header();
         </div>
     </section>
     <section class="universe">
-        <div class="light padding-y">
+        <div class="jc_container light padding-y">
             <div class="text-center">
                 <h3 class="upperline">
                     My universe
                 </h3>
             </div>
             <div class="box wrap center margin-y">
-                <figure class="margin">
-                    <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png">
+                <figure>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/html.png">
                     <figcaption>
                         <p>Html 5</p>
                     </figcaption>
                 </figure>
-                <figure class="margin">
-                    <img src="https://maxcdn.icons8.com/Share/icon/Logos//css31600.png">
+                <figure>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/css.png">
                     <figcaption>
                         <p>Css 3</p>
                     </figcaption>
                 </figure>
-                <figure class="margin">
-                    <img src="https://aspblogs.blob.core.windows.net/media/dwahlin/Windows-Live-Writer/57c59b2be72b_127DE/image_8.png">
+                <figure>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/javascript.png">
                     <figcaption>
                         <p>Javascript</p>
                     </figcaption>
                 </figure>
+                <figure>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/photoshop.jpg">
+                    <figcaption>
+                        <p>Photoshop</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/angular4.png">
+                    <figcaption>
+                        <p>Angular 4</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/bootstrap.png">
+                    <figcaption>
+                        <p>Bootstrap</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/chrome.png">
+                    <figcaption>
+                        <p>Chrome</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/illustrator.png">
+                    <figcaption>
+                        <p>Illustrator</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/java.png">
+                    <figcaption>
+                        <p>Java</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/jquery.png">
+                    <figcaption>
+                        <p>Jquery</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/magento.png">
+                    <figcaption>
+                        <p>Magento</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/microsoft.png">
+                    <figcaption>
+                        <p>Microsoft</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/photoshop.jpg">
+                    <figcaption>
+                        <p>Photoshop</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/mongodb.png">
+                    <figcaption>
+                        <p>MongoDb</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/mysql-php.png">
+                    <figcaption>
+                        <p>PHP/Mysql</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/nginx.png">
+                    <figcaption>
+                        <p>Nginx</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/nodejs.svg">
+                    <figcaption>
+                        <p>NodeJs</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/phpstorm.png">
+                    <figcaption>
+                        <p>PHPStorm</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/prestashop.svg">
+                    <figcaption>
+                        <p>Prestashop</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/react.png">
+                    <figcaption>
+                        <p>React</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/sass.png">
+                    <figcaption>
+                        <p>Sass</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/symfony.png">
+                    <figcaption>
+                        <p>Symfony 3</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/wordpress.png">
+                    <figcaption>
+                        <p>Wordpress</p>
+                    </figcaption>
+                </figure>
+
             </div>
         </div>
     </section>
     <section class="skills bg-light padding-y">
         <div class="jc_container">
             <h3 class="dark upperline">My Skills</h3>
-            <div id="chart-skill">
+            <div id="chart-skill" class="doSeeMe">
                 <div class="marking-level box down auto">
                     <div><i>Maitrise</i></div>
                     <div><i>Expert</i></div>
                     <div><i>Avancé</i></div>
                     <div><i>Junior</i></div>
                     <div><i></i></div>
-
+                </div>
+                <div class="skills box auto">
+                    <p data-skill-level="95">JS</p>
+                    <p data-skill-level="90">Css/Html</p>
+                    <p data-skill-level="50">Adobe</p>
+                    <p data-skill-level="75">PHP</p>
+                    <p data-skill-level="40">C++</p>
+                    <p data-skill-level="60">c#</p>
+                    <p data-skill-level="55">Java</p>
                 </div>
             </div>
         </div>
@@ -155,6 +284,10 @@ get_footer();
                 scene.clear();
                 initStars();
             }
+            if (sceneSkills) {
+                sceneSkills.clear();
+                initSkills();
+            }
         });
 
         class Star extends Point {
@@ -215,37 +348,42 @@ get_footer();
         initStars();
 
         class Chart {
-            constructor(width, height, ...skillLevel) {
+            constructor(width, height, skillsLevel) {
                 this.points = []
-                for (let i = 0; i < skillLevel.length; i++) {
-                    var p = new Point(width * i / skillLevel.length, height);
-                    p.speed = 4;
-                    p.setTargetPosition(width * i / skillLevel.length,height - skillLevel[i]);
+                for (let i = 0; i < skillsLevel.length; i++) {
+                    var p = new Point(width * i / skillsLevel.length, height);
+                    p.speed = 10;
+                    p.setTargetPosition(width * i / skillsLevel.length, height - skillsLevel[i]);
                     this.points.push(p);
                 }
                 this.points.push(new Point(width, height))
             }
-            draw(ctx) {
-                // move to the first point
-                ctx.save();
 
+            draw(ctx) {
+                ctx.save();
                 ctx.beginPath();
                 ctx.fillStyle = "#f8f9fa"
                 ctx.shadowBlur = 100;
                 ctx.shadowColor = '#c0c0c0';
                 ctx.moveTo(this.points[0].x, this.points[0].y);
-
                 let i;
                 for (i = 1; i < this.points.length - 2; i++) {
                     var xc = (this.points[i].x + this.points[i + 1].x) / 2;
                     var yc = (this.points[i].y + this.points[i + 1].y) / 2;
                     ctx.quadraticCurveTo(this.points[i].x, this.points[i].y, xc, yc);
-                    this.points[i].moveToTarget();
                 }
-                // curve through the last two points
                 ctx.quadraticCurveTo(this.points[i].x, this.points[i].y, this.points[i + 1].x, this.points[i + 1].y);
-                this.points[i].moveToTarget();
-
+                for (let p = 0; p < this.points.length; p++) {
+                    if (this.points[p].travelComplete) {
+                        continue;
+                    } else {
+                        this.points[p].travel();
+                        if(p == this.points.length - 1){
+                            sceneSkills.pause = true;
+                        }
+                        break;
+                    }
+                }
                 ctx.closePath();
                 ctx.fill();
                 ctx.restore();
@@ -253,15 +391,36 @@ get_footer();
         }
 
         var sceneSkills = new Game('chart-skill');
-
         function initSkills() {
-
+            var skillsLevel = [];
+            $('[data-skill-level]').each(function () {
+                skillsLevel.push(0);
+                skillsLevel.push($(this).data('skill-level') * 6.5);
+            });
             sceneSkills.add('points',
                 new Chart(
-                    sceneSkills.canvas.width, sceneSkills.canvas.height, 0, 400, 0, 300, 0,650,0,500,0,650));
+                    sceneSkills.canvas.width, sceneSkills.canvas.height, skillsLevel));
         }
 
         initSkills();
+
+        SeeElement('.doSeeMe', function (elem) {
+            if (elem.attr('id') == 'stars') {
+                scene.pause = false;
+            } else if (elem.attr('id') == 'chart-skill') {
+                setTimeout(function () {
+                    initSkills();
+                    sceneSkills.pause = false;
+                })
+            }
+        }, function (elem) {
+            if (elem.attr('id') == 'stars') {
+                scene.pause = true;
+            } else if (elem.attr('id') == 'chart-skill') {
+                sceneSkills.clear();
+            }
+        });
+
     })
 
 </script>

@@ -16,6 +16,9 @@ body {
     line-height: 1.2;
     background-color: #111;
 }
+.logo{
+    width: 48px;
+}
 .btn {
     color: #4d4d4d;
     background-color: transparent;
@@ -291,7 +294,7 @@ header nav{
 }
 .nav-effect-cut > li .bottom a {
     position: relative;
-    bottom: 128%;
+    bottom: 0.68rem;
 }
 #stars{
     position: relative;
@@ -312,8 +315,11 @@ header nav{
 .universe figcaption{
     text-align: center;
 }
+.universe figure {
+margin: 40px;
+}
 .universe figure img {
-    max-height:64px ;
+    max-height:100px ;
     width:auto;
 }
 #chart-skill{
@@ -324,6 +330,7 @@ header nav{
 #chart-skill canvas{
     position: absolute;
     top:0;
+    z-index: 100;
 }
 #chart-skill .marking-level{
     height: 100%;
@@ -340,4 +347,12 @@ header nav{
     position: absolute;
     bottom: 0;
     left: -0.6rem;
+}
+#chart-skill .skills{
+    z-index: 110;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 20px;
+    text-align: center;
 }

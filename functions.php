@@ -21,8 +21,8 @@ function portfolio_setup() {
 		'social-menu' => __( 'Social Menu', 'portfolio' )
 	) );
 	add_theme_support( 'custom-logo', array(
-		'height'      => 60,
-		'width'       => 60,
+		'height'      => 48,
+		'width'       => 48,
 		'flex-height' => true,
 	) );
 
