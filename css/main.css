@@ -16,55 +16,68 @@ body {
     line-height: 1.2;
     background-color: #111;
 }
-.logo{
+canvas{
+    pointer-events: none;
+}
+.logo {
     width: 48px;
 }
+
 .btn {
     color: #4d4d4d;
     background-color: transparent;
     border-color: #4d4d4d;
 }
+
 .btn:hover {
     color: #4d4d4d;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     border-color: #4d4d4d;
 }
+
 .btn-primary {
     color: #4d4d4d;
     background-color: #e2e2e2;
     border-color: #e2e2e2;
 }
+
 .btn-primary:hover {
     color: #4d4d4d;
-    background-color: rgba(226,226,226,0.6);
-    border-color: rgba(226,226,226,0.6);
+    background-color: rgba(226, 226, 226, 0.6);
+    border-color: rgba(226, 226, 226, 0.6);
 }
-.light{
+
+.light {
     color: #f8f9fa;
 }
-.bg-light{
+
+.bg-light {
     background-color: #f8f9fa;
 }
+
 .top-header {
     background-color: #e2e2e2;
     position: fixed;
     width: 100%;
     z-index: 1000;
 }
-.fix-top-header{
+
+.fix-top-header {
     transition: height 0.1s ease-in-out;
 }
 
 .top-header {
     padding-top: 10px;
 }
+
 .top-header nav a {
     font-weight: 400;
 }
-.top-header .big-title{
+
+.top-header .big-title {
     opacity: 1;
     position: relative;
-    z-index:100;
+    z-index: 100;
     overflow: hidden;
     transition: opacity 0.9s ease-in-out, max-height 0.6s ease;
     transition-delay: 0.75s;
@@ -72,75 +85,87 @@ body {
     max-height: 200px;
     margin-left: 60px;
 }
-.top-header .big-title.active{
+
+.top-header .big-title.active {
     opacity: 0;
     max-height: 0;
 }
-.top-header .big-title .header-hide-effect{
+
+.top-header .big-title .header-hide-effect {
 
     z-index: 200;
     position: absolute;
     background-color: #e2e2e2;
     height: 100%;
     width: 0;
-    top:0;
+    top: 0;
     transition: width 1.5s ease-in-out;
 }
+
 .top-header .big-title.active .header-hide-effect {
     width: 100%;
 }
-.title-caption{
+
+.title-caption {
 
     position: relative;
 }
-.title-caption .move-down{
+
+.title-caption .move-down {
     position: relative;
     z-index: 10;
 }
-.bottom-header{
-    height:440px;
+
+.bottom-header {
+    height: 440px;
     background-size: cover;
     background: url("../img/bg-sunset.jpg") no-repeat 50% -100px;
     overflow-y: hidden;
 
 }
-.bottom-header h2{
+
+.bottom-header h2 {
     font-size: 3.0rem;
     font-weight: 100;
 }
 
-.portrait-img img{
+.portrait-img img {
     width: 300px;
     margin-left: 100px;
-    border: #4d4d4d 2px solid ;
+    border: #4d4d4d 2px solid;
 }
-.content{
+
+.content {
     text-align: justify;
 }
-.upperline{
+
+.upperline {
     display: inline-block;
     position: relative;
     padding-top: 8px;
 }
-.upperline:before{
+
+.upperline:before {
     content: '';
     display: inline-block;
     height: 3px;
     position: absolute;
     left: -15px;
     width: 60%;
-    top:0;
-    background-color: #e2e2e2 ;
+    top: 0;
+    background-color: #e2e2e2;
 }
-.upperline.dark:before{
-    background-color: #4d4d4d ;
+
+.upperline.dark:before {
+    background-color: #4d4d4d;
 }
+
 .top-header h1 {
     color: #4d4d4d;
     background: linear-gradient(to top right, #4d4d4d 0%, #e2e2e2 39%, #4d4d4d 62%, #e2e2e2 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-animation: invert 5s infinite linear ;
+    -webkit-animation: invert 5s infinite linear;
     display: inline-block;
     font-size: 3rem;
     padding: 3px 0;
@@ -149,9 +174,11 @@ body {
 header h2 {
     color: #909090;
 }
-header nav{
+
+header nav {
     padding-bottom: 10px;
 }
+
 .header_img {
     border: #e2e2e2 10px solid;
 }
@@ -167,6 +194,7 @@ header nav{
         -webkit-filter: invert(0%);
     }
 }
+
 @keyframes hue-rotate {
     0% {
         -webkit-filter: hue-rotate(0deg);
@@ -196,24 +224,26 @@ header nav{
 .nav-effect-cut > li:hover:before {
     animation: width-effect-cut 3s ease-in-out infinite;
 }
+
 @keyframes width-effect-cut {
     0% {
         width: 0%;
     }
-    10%{
+    10% {
         width: 100%;
     }
-    40%{
+    40% {
         left: auto;
         right: 0;
         width: 100%;
     }
-    50%{
+    50% {
         left: auto;
         right: 0;
         width: 0%;
     }
 }
+
 .nav-effect-cut > li.drop:before {
     left: auto;
     right: 0;
@@ -235,112 +265,128 @@ header nav{
     top: 0.3rem;
     height: 0.7rem;
 }
+
 .nav-effect-cut > li:hover > .top {
-    animation: top-effect-cut 3s ease-in-out infinite ;
+    animation: top-effect-cut 3s ease-in-out infinite;
     animation-delay: 0.2s;
 }
-@keyframes top-effect-cut  {
+
+@keyframes top-effect-cut {
     0% {
         left: 5px;
     }
-    10%{
+    10% {
         left: 7px;
         transform: rotate(2deg);
         transform-origin: right;
     }
-    40%{
+    40% {
         left: 7px;
         transform-origin: right;
     }
-    50%{
+    50% {
         left: 5px;
         transform-origin: right;
 
     }
 }
+
 .nav-effect-cut > li .bottom {
     bottom: 0.3rem;
     height: 0.52rem;
 }
 
 .nav-effect-cut > li:hover .bottom {
-    animation: bottom-effect-cut 3s ease-in-out infinite ;
+    animation: bottom-effect-cut 3s ease-in-out infinite;
     animation-delay: 0.2s;
 }
-@keyframes bottom-effect-cut  {
+
+@keyframes bottom-effect-cut {
     0% {
         left: 5px;
     }
-    10%{
+    10% {
         left: 3px;
         transform: rotate(-120deg);
         transform-origin: right;
     }
-    40%{
+    40% {
         left: 3px;
         transform: rotate(-75deg);
         transform-origin: right;
     }
-    50%{
+    50% {
         left: 5px;
         transform: rotate(-120deg);
         transform-origin: right;
     }
-    70%{
+    70% {
         left: 5px;
         transform: rotate(0deg);
         transform-origin: right;
     }
 }
+
 .nav-effect-cut > li .bottom a {
     position: relative;
     bottom: 0.68rem;
 }
-#stars{
+
+#stars {
     position: relative;
     display: block;
 }
-#stars canvas{
+
+#stars canvas {
     position: absolute;
     top: 0;
     z-index: 10;
 }
-.image-about-me{
+
+.image-about-me {
     width: 300px;
     height: 300px;
     border-radius: 100%;
     overflow: hidden;
     z-index: 100;
 }
-.universe figcaption{
+
+.universe figcaption {
     text-align: center;
 }
+
 .universe figure {
-margin: 40px;
+    margin: 40px;
 }
+
 .universe figure img {
-    max-height:100px ;
-    width:auto;
+    max-height: 100px;
+    width: auto;
 }
-#chart-skill{
-    height:500px;
+
+#chart-skill {
+    height: 500px;
     border: 1px solid #c0c0c0;
     position: relative;
 }
-#chart-skill canvas{
+
+#chart-skill canvas {
     position: absolute;
-    top:0;
+    top: 0;
     z-index: 100;
 }
-#chart-skill .marking-level{
+
+#chart-skill .marking-level {
     height: 100%;
 }
-#chart-skill .marking-level > div{
-    border-bottom:1px solid #c0c0c0;
+
+#chart-skill .marking-level > div {
+    border-bottom: 1px solid #c0c0c0;
     position: relative;
     background-color: #f3f3f3;
 }
-#chart-skill .marking-level > div > i{
+
+#chart-skill .marking-level > div > i {
     transform: rotate(-90deg);
     transform-origin: left;
     display: inline-block;
@@ -348,11 +394,22 @@ margin: 40px;
     bottom: 0;
     left: -0.6rem;
 }
-#chart-skill .skills{
+
+#chart-skill .skills {
     z-index: 110;
     position: absolute;
     width: 100%;
     bottom: 0;
     padding-bottom: 20px;
     text-align: center;
+}
+
+@media all and (max-width: 786px ) {
+    .universe figure {
+        margin: 20px;
+    }
+
+    #chart-skill {
+        height: 250px;
+    }
 }

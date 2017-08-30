@@ -16,12 +16,12 @@ jQuery(document).ready(function () {
     SeeElement = function (query, onSee, onStopSee) {
 
         $(document).on('scroll', function () {
-            var scrollTop = $(window).scrollTop();
-            var scrollBottom = scrollTop + $(window).height();
+            let scrollTop = $(window).scrollTop();
+            let scrollBottom = scrollTop + $(window).innerHeight();
             $(query).each(function () {
-                var $el = $(this);
-                var offsetTop = $el.offset().top;
-                var offsetBottom = $el.height() + offsetTop;
+                let $el = $(this);
+                let offsetTop = $el.offset().top;
+                let offsetBottom = $el.height() + offsetTop;
                 if (offsetTop < scrollBottom && offsetBottom > scrollTop) {
                     if (!$el.hasClass('seeMe')) {
                         $el.addClass('seeMe');

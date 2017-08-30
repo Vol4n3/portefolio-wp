@@ -11,7 +11,7 @@ get_header();
     <section id="stars" class="doSeeMe">
         <div class="jc_container padding-y">
             <div class="box between wrap relative y-center ">
-                <div class="half light">
+                <div class="half-desktop light">
                     <h3 class="upperline">Know more
                         <br>About me</h3>
                     <p class="">
@@ -362,7 +362,7 @@ get_footer();
             draw(ctx) {
                 ctx.save();
                 ctx.beginPath();
-                ctx.fillStyle = "#f8f9fa"
+                ctx.fillStyle = "#f8f9fa";
                 ctx.shadowBlur = 100;
                 ctx.shadowColor = '#c0c0c0';
                 ctx.moveTo(this.points[0].x, this.points[0].y);
@@ -395,7 +395,7 @@ get_footer();
             var skillsLevel = [];
             $('[data-skill-level]').each(function () {
                 skillsLevel.push(0);
-                skillsLevel.push($(this).data('skill-level') * 6.5);
+                skillsLevel.push($(this).data('skill-level') * sceneSkills.canvas.height*1.3 /100);
             });
             sceneSkills.add('points',
                 new Chart(
