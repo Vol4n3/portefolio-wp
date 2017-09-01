@@ -81,9 +81,9 @@ get_header();
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/photoshop.jpg">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/icon/gulp-2x.png">
                     <figcaption>
-                        <p>Photoshop</p>
+                        <p>Gulp</p>
                     </figcaption>
                 </figure>
                 <figure>
