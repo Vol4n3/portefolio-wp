@@ -45,31 +45,31 @@ a {
 }
 
 .margin {
-    margin: 10px;
+    margin: 25px;
 }
 
 .padding {
-    padding: 10px;
+    padding: 25px;
 }
 
 .margin-x {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .padding-x {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .margin-y {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .padding-y {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 a:hover, a:visited {
@@ -299,7 +299,8 @@ img {
     background-color: transparent;
 
 }
-@media all and (min-width: 769px) {
+
+@media all and (min-width: 1281px) {
 
     .full-desktop {
         width: 100%;
@@ -321,6 +322,30 @@ img {
         width: 20%;
     }
 }
+
+@media all and (min-width: 769px) and (max-width: 1280px) {
+
+    .full-tablet {
+        width: 100%;
+    }
+
+    .half-tablet {
+        width: 50%;
+    }
+
+    .tier-tablet {
+        width: calc(100% / 3);
+    }
+
+    .quarter-tablet {
+        width: 25%;
+    }
+
+    .fifth-tablet {
+        width: 20%;
+    }
+}
+
 @media all and (max-width: 768px) {
     .box.between {
         justify-content: center;
@@ -344,5 +369,33 @@ img {
 
     .fifth-mobile {
         width: 20%;
+    }
+
+    .margin {
+        margin: 10px;
+    }
+
+    .padding {
+        padding: 10px;
+    }
+
+    .margin-x {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .padding-x {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .margin-y {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .padding-y {
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 }

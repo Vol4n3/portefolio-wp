@@ -48,11 +48,11 @@ canvas{
 }
 
 .light {
-    color: #f8f9fa;
+    color: #f8f9fa !important;
 }
 
 .bg-light {
-    background-color: #f8f9fa;
+    background-color: #f8f9fa !important;
 }
 
 .top-header {
@@ -60,6 +60,9 @@ canvas{
     position: fixed;
     width: 100%;
     z-index: 1000;
+}
+.footer{
+    background-color: #e2e2e2;
 }
 
 .fix-top-header {
@@ -162,7 +165,7 @@ canvas{
 
 .top-header h1 {
     color: #4d4d4d;
-    background: linear-gradient(to top right, #4d4d4d 0%, #e2e2e2 39%, #4d4d4d 62%, #e2e2e2 100%);
+    background-image: -webkit-linear-gradient(80deg,#4d4d4d,#e2e2e2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-animation: invert 5s infinite linear;
@@ -403,7 +406,9 @@ header nav {
     padding-bottom: 20px;
     text-align: center;
 }
-
+.blog-article .content{
+ min-height: 500px;
+}
 @media all and (max-width: 786px ) {
     .universe figure {
         margin: 20px;

@@ -237,49 +237,8 @@ get_footer();
     jQuery(function () {
         const $ = jQuery;
 
-        class HeaderTitle {
-            constructor(element) {
-                this.setActive($(document).scrollTop());
-                this.element = element;
-            }
-
-            setActive(scrollTop) {
-                this.active = scrollTop > 133 && !this.active
-                    || scrollTop > 75 && this.active;
-            }
-
-            resize(scrollTop) {
-                this.setActive(scrollTop);
-                if (this.active) {
-                    fixSize();
-                    this.element.addClass('active');
-                    setTimeout(fixSize, 810);
-                } else {
-                    fixSize();
-                    this.element.removeClass('active');
-                    setTimeout(fixSize, 810);
-                }
-            }
-        }
-
-        const ht = new HeaderTitle($('.big-title'));
-        /*scroll event*/
-        $(document).scroll(() => {
-            let scrollTop = $(this).scrollTop();
-            /*Header bar*/
-            ht.resize(scrollTop);
-            /*Header img effect*/
-            $('.bottom-header').css('background-position', '50%' + (-scrollTop / 2) + 'px');
-        });
-
-        function fixSize() {
-            $('.fix-top-header').height($('.top-header').height());
-        }
-
-        fixSize();
         /*Resize event*/
         window.addEventListener('resize', () => {
-            fixSize();
             if (scene) {
                 scene.clear();
                 initStars();
