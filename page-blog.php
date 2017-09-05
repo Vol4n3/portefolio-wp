@@ -14,25 +14,34 @@ get_header();
 
             <h1 class="upperline dark"><?php the_title(); ?></h1>
             <div>
-                <?php the_content(); ?>
+				<?php
+				while ( have_posts() ) : the_post(); ?>
+                    <div class="entry-content-page">
+						<?php the_content(); ?>
+                    </div>
+
+					<?php
+				endwhile;
+				wp_reset_query();
+				?>
             </div>
             <div class="box wrap center y-center margin-y">
-                <?php
-                query_posts(array('post_type' => 'post'));
-                if (have_posts()) : while (have_posts()) : the_post();
-                    ?>
+				<?php
+				query_posts( array( 'post_type' => 'post' ) );
+				if ( have_posts() ) : while ( have_posts() ) : the_post();
+					?>
                     <article class="tier-desktop half-tablet padding">
 
                         <figure class=" bg-light shadow padding">
                             <div class="figure-img box center y-center">
-                                <?php the_post_thumbnail(); ?>
+								<?php the_post_thumbnail(); ?>
                             </div>
                             <figcaption class="padding-y">
                                 <div class="">
-                                <h3><?php the_title(); ?></h3>
-                                <?php the_field('description') ?>
+                                    <h3><?php the_title(); ?></h3>
+									<?php the_field( 'description' ) ?>
 
-                                <p>test blabla</p>
+                                    <p>test blabla</p>
 
                                 </div>
                                 <div class="text-right">
@@ -41,10 +50,10 @@ get_header();
                             </figcaption>
                         </figure>
                     </article>
-                    <?php
-                endwhile;
-                endif;
-                ?>
+					<?php
+				endwhile;
+				endif;
+				?>
 
             </div>
         </section>
