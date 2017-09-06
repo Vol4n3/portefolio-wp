@@ -611,6 +611,26 @@ header .jc_container nav.box {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
 }
+.avatar-42,.avatar{
+    width: 42px;
+}
+#commentform{
+    text-align: center;
+}
+#commentform label{
+    display: none;
+}
+.comment-body p{
+    background: #fff;
+    padding: 20px;
+    margin: 5px 5rem;
+}
+.comment-author {
+    background: #4d4d4d;
+    color: #e2e2e2;
+    display: inline-block;
+    padding-right:5px;
+}
 @-webkit-keyframes coinRotate {
     0%{
         -webkit-transform: rotate3d(0,1,0,0deg);

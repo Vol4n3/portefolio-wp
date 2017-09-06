@@ -6,6 +6,7 @@
  * Time: 15:30
  */
 get_header();
+
 $date = new Datetime( get_the_date( 'Y-m-d' ) );
 ?>
 <main class="blog-article">
@@ -15,9 +16,9 @@ $date = new Datetime( get_the_date( 'Y-m-d' ) );
                 <header>
                     <div class="quarter-desktop float-left margin">
                         <p>le
-                            <time datetime="<?php echo $date->format( 'Y-m-d' ); ?>"><?php echo $date->format( 'd F Y' ); ?> </time>
+                            <time datetime="<?php echo $date->format( 'Y-m-d' ); ?>"><?php echo $date->format( 'd.m.Y' ); ?> </time>
                         </p>
-                        <?php the_post_thumbnail( 'full' ); ?>
+						<?php the_post_thumbnail( 'full' ); ?>
                     </div>
                     <h1 class="upperline dark"><?php the_title() ?></h1>
                 </header>
@@ -44,22 +45,26 @@ $date = new Datetime( get_the_date( 'Y-m-d' ) );
                             <div>
                                 <div class="text-center">
                                     <button type="button" onclick="showSample('.example<?php echo $countRow; ?>')"
-                                            class="btn margin btn-primary">Voir l'exemple <?php the_sub_field('titre');?>
+                                            class="btn margin btn-primary">Voir
+                                        l'exemple <?php the_sub_field( 'titre' ); ?>
                                     </button>
 
                                 </div>
                                 <div class="code<?php echo $countRow; ?> box wrap code-example">
                                     <div class="tier-desktop full">
                                         <h4>Html</h4>
-                                        <pre><code class="html" contentEditable="true"><?php echo esc_html( get_sub_field( 'html' ) ); ?></code></pre>
+                                        <pre><code class="html"
+                                                   contentEditable="true"><?php echo esc_html( get_sub_field( 'html' ) ); ?></code></pre>
                                     </div>
                                     <div class="tier-desktop full">
                                         <h4>Css</h4>
-                                        <pre><code class="css" contentEditable="true"><?php echo esc_html( get_sub_field( 'css' ) ); ?></code></pre>
+                                        <pre><code class="css"
+                                                   contentEditable="true"><?php echo esc_html( get_sub_field( 'css' ) ); ?></code></pre>
                                     </div>
                                     <div class="tier-desktop full">
                                         <h4>Javascript</h4>
-                                        <pre><code class="javascript" contentEditable="true"><?php echo esc_html( get_sub_field( 'js' ) ); ?></code></pre>
+                                        <pre><code class="javascript"
+                                                   contentEditable="true"><?php echo esc_html( get_sub_field( 'js' ) ); ?></code></pre>
                                     </div>
                                 </div>
                             </div>
@@ -71,6 +76,13 @@ $date = new Datetime( get_the_date( 'Y-m-d' ) );
 
 					?>
                 </div>
+                <footer>
+					<?php
+					if ( comments_open() || get_comments_number() ) {
+						comments_template();
+					}
+					?>
+                </footer>
             </article>
         </div>
     </section>
