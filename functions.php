@@ -43,7 +43,7 @@ function portfolio_setup() {
 add_action( 'after_setup_theme', 'portfolio_setup' );
 
 function sauvant_scripts() {
-	$verCache = '0.11';
+	$verCache = '0.12';
 	/*CSS load*/
 	wp_enqueue_style( 'bootstrap', get_theme_file_uri( '/css/bootstrap.min.css' ), array(), $verCache, 'all' );
 	wp_enqueue_style( 'css_tools', get_theme_file_uri( '/css/css_tools.css' ), array(), $verCache, 'all' );

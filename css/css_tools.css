@@ -42,6 +42,7 @@ canvas {
 a {
     text-decoration: none;
     color: #0077f7;
+    transition: all 0.3s ease-in-out;
 }
 
 .jc_container > *:first-child {
@@ -87,11 +88,11 @@ a {
     padding-bottom: 90px;
 }
 
-a:hover {
-    font-weight: 900;
-}
 a:visited{
     color: #0698a9;
+}
+a:hover {
+    color: #656565 ;
 }
 ul.list {
     padding: 0;
