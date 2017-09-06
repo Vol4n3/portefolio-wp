@@ -9,9 +9,9 @@ get_header();
 ?>
 <main>
     <section id="stars" class="doSeeMe">
-        <div class="jc_container padding-y">
-            <div class="box between wrap relative y-center ">
-                <div class="half-desktop light">
+        <div class="jc_container">
+            <div class="box between wrap relative y-center padding-y">
+                <div class="half-desktop half-tablet light">
                     <h3 class="upperline">Know more
                         <br>About me</h3>
                     <p class="">
@@ -20,7 +20,7 @@ get_header();
                         était pleinement intéressante.
                     </p>
                     <p>
-                        Après 7 ans dans ce métier, j'ai découvert mon talent pour la programmation d'applications.
+                        Après 7 ans dans ce métier, je me suis découvert mon talent pour la programmation d'applications.
                         Coder des sites web est devenu ma passion.
                     </p>
                     <p>
@@ -54,8 +54,8 @@ get_header();
             </div>
         </div>
     </section>
-    <section class="universe">
-        <div class="jc_container light padding-y">
+    <section class="universe jc_container ">
+        <div class="padding-y light">
             <div class="text-center">
                 <h3 class="upperline">
                     My universe
@@ -204,27 +204,28 @@ get_header();
             </div>
         </div>
     </section>
-    <section class="skills bg-light padding-y">
-        <div class="jc_container">
-            <h3 class="dark upperline">My Skills</h3>
-            <div id="chart-skill" class="doSeeMe">
-                <div class="marking-level box down auto">
-                    <div><i>Maitrise</i></div>
-                    <div><i>Expert</i></div>
-                    <div><i>Avancé</i></div>
-                    <div><i>Junior</i></div>
-                    <div><i></i></div>
-                </div>
-                <div class="skills box auto">
-                    <p data-skill-level="95">JS</p>
-                    <p data-skill-level="90">Css/Html</p>
-                    <p data-skill-level="50">Adobe</p>
-                    <p data-skill-level="75">PHP</p>
-                    <p data-skill-level="40">C++</p>
-                    <p data-skill-level="60">c#</p>
-                    <p data-skill-level="55">Java</p>
+    <section class="skills bg-light">
+        <div class=" jc_container">
+            <div class="">
+                <h3 class="dark upperline">My Skills</h3>
+                <div id="chart-skill" class="doSeeMe">
+                    <div class="marking-level box down auto">
+                        <div><i>Maitrise</i></div>
+                        <div><i>Expert</i></div>
+                        <div><i>Avancé</i></div>
+                        <div><i>Junior</i></div>
+                        <div><i></i></div>
+                    </div>
+                    <div class="skills box auto">
+                        <p data-skill-level="85">Css/Html</p>
+                        <p data-skill-level="65">PHP</p>
+                        <p data-skill-level="95">JS</p>
+                        <p data-skill-level="35">Ux/Ui</p>
+                        <p data-skill-level="50">Design</p>
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
 

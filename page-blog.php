@@ -41,8 +41,6 @@ get_header();
                                     <h3><?php the_title(); ?></h3>
 									<?php the_field( 'description' ) ?>
 
-                                    <p>test blabla</p>
-
                                 </div>
                                 <div class="text-right">
                                     <a class="btn btn-primary" href="<?php echo get_permalink(); ?>">Lire la suite</a>

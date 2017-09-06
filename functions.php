@@ -37,34 +37,38 @@ function portfolio_setup() {
 				'public' => true
 			)
 		);*/
+	remove_filter( 'the_content', 'wptexturize' );
 }
 
 add_action( 'after_setup_theme', 'portfolio_setup' );
 
-function sauvant_scripts()
-{
+function sauvant_scripts() {
 	/*CSS load*/
-	wp_enqueue_style('bootstrap', get_theme_file_uri('/css/bootstrap.min.css'), array(), '4.0.0', 'all');
-	wp_enqueue_style('css_tools', get_theme_file_uri('/css/css_tools.css'), array(), '1.0', 'all');
-	wp_enqueue_style('main', get_theme_file_uri('/css/main.css'), array(), '1.0', 'all');
+	wp_enqueue_style( 'bootstrap', get_theme_file_uri( '/css/bootstrap.min.css' ), array(), '4.0.0', 'all' );
+	wp_enqueue_style( 'css_tools', get_theme_file_uri( '/css/css_tools.css' ), array(), '1.0', 'all' );
+	wp_enqueue_style( 'main', get_theme_file_uri( '/css/main.css' ), array(), '1.0', 'all' );
 	/*JS load*/
-	wp_enqueue_script('jquery', get_theme_file_uri('/js/jquery.min.js'), array(), '3.2.1', true);
-	wp_enqueue_script('app', get_theme_file_uri('/js/main.js'), array('jquery'), '1.0', true);
+	wp_enqueue_script( 'jquery', get_theme_file_uri( '/js/jquery.min.js' ), array(), '3.2.1', true );
+	wp_enqueue_script( 'app', get_theme_file_uri( '/js/main.js' ), array( 'jquery' ), '1.0', true );
+	if ( is_single() ) {
+		wp_enqueue_style( 'highlight-atom', get_theme_file_uri( '/css/atom-one-dark.css' ), array(), '1.0', 'all' );
+		wp_enqueue_script( 'highlight', get_theme_file_uri( '/js/highlight.pack.js' ), array(), '1.0', true );
+
+	}
 }
 
-add_action('wp_enqueue_scripts', 'sauvant_scripts');
+add_action( 'wp_enqueue_scripts', 'sauvant_scripts' );
 
-function sauvant_widgets_init()
-{
-	register_sidebar(array(
-		'name' => __('Header', 'portfolio'),
-		'id' => 'header-widget',
-		'description' => __('Ajouter ici le contenu', 'portfolio'),
+function sauvant_widgets_init() {
+	register_sidebar( array(
+		'name'          => __( 'Header', 'portfolio' ),
+		'id'            => 'header-widget',
+		'description'   => __( 'Ajouter ici le contenu', 'portfolio' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget' => '</section>',
-		'before_title' => '<label class="widget-title">',
-		'after_title' => '</label>',
-	));
+		'after_widget'  => '</section>',
+		'before_title'  => '<label class="widget-title">',
+		'after_title'   => '</label>',
+	) );
 }
 
-add_action('widgets_init', 'sauvant_widgets_init');
+add_action( 'widgets_init', 'sauvant_widgets_init' );

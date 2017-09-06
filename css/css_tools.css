@@ -44,6 +44,16 @@ a {
     color: inherit;
 }
 
+.jc_container > *:first-child {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.jc_container > .padding-y {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
 .margin {
     margin: 25px;
 }
@@ -72,6 +82,11 @@ a {
     padding-bottom: 25px;
 }
 
+.padding-y-lg {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
 a:hover, a:visited {
     color: inherit;
 }
@@ -97,6 +112,10 @@ ul.list > li {
 
 h1, h2, h3, h4, h5, h6, p {
     margin-top: 0;
+}
+
+h3 {
+    margin-bottom: 2rem;
 }
 
 h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center, span.center {
@@ -274,6 +293,8 @@ img {
 .hover-growth.transition-color {
     transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
+
+
 
 .btn {
     display: inline-block;

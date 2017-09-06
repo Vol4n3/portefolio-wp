@@ -7,8 +7,11 @@
  */
 ?>
 <footer class="footer shadow">
-    <div class="jc_container padding-y">
-        <p>Follow me</p>
+    <div class="jc_container">
+        <div>
+            <p>Follow me on:</p>
+
+        </div>
 
     </div>
 </footer>
