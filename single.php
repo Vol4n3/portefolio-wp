@@ -47,15 +47,15 @@ $date = new Datetime( the_date( 'Y-m-d' ) );
 
                                 </div>
                                 <div class="code<?php echo $countRow; ?> box wrap code-example">
-                                    <div class="tier ">
+                                    <div class="tier-desktop full">
                                         <h4>Html</h4>
                                         <pre><code class="html" contentEditable="true"><?php echo esc_html( get_sub_field( 'html' ) ); ?></code></pre>
                                     </div>
-                                    <div class="tier">
+                                    <div class="tier-desktop full">
                                         <h4>Css</h4>
                                         <pre><code class="css" contentEditable="true"><?php echo esc_html( get_sub_field( 'css' ) ); ?></code></pre>
                                     </div>
-                                    <div class="tier">
+                                    <div class="tier-desktop full">
                                         <h4>Javascript</h4>
                                         <pre><code class="javascript" contentEditable="true"><?php echo esc_html( get_sub_field( 'js' ) ); ?></code></pre>
                                     </div>
