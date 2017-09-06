@@ -6,19 +6,21 @@
  * Time: 15:30
  */
 get_header();
-$date = new Datetime( the_date( 'Y-m-d' ) );
+$date = new Datetime( get_the_date( 'Y-m-d' ) );
 ?>
 <main class="blog-article">
     <section class="jc_container">
         <div class="content bg-light ">
-            <div class="padding">
-                <div class="quarter-desktop float-left margin">
-                    <p>le
-                        <time datetime="<?php echo $date->format( 'Y-m-d' ); ?>"><?php echo $date->format( 'd F Y' ); ?> </time>
-                    </p>
-					<?php the_post_thumbnail( 'full' ); ?>
-                </div>
-                <h1 class="upperline dark"><?php the_title() ?></h1>
+            <article class="padding">
+                <header>
+                    <div class="quarter-desktop float-left margin">
+                        <p>le
+                            <time datetime="<?php echo $date->format( 'Y-m-d' ); ?>"><?php echo $date->format( 'd F Y' ); ?> </time>
+                        </p>
+                        <?php the_post_thumbnail( 'full' ); ?>
+                    </div>
+                    <h1 class="upperline dark"><?php the_title() ?></h1>
+                </header>
                 <div class="padding clearfix">
 					<?php
 					while ( have_posts() ) : the_post(); ?>
@@ -69,7 +71,7 @@ $date = new Datetime( the_date( 'Y-m-d' ) );
 
 					?>
                 </div>
-            </div>
+            </article>
         </div>
     </section>
 	<?php
