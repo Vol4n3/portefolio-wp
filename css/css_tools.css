@@ -125,15 +125,16 @@ h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center, span
 }
 
 .shadow {
-    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
+    -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
+            filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
 }
 
 .shadow-light {
-    filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.2));
+    -webkit-filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.2));
+            filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.2));
 }
 
 .shadow-box {
-    -moz-box-shadow: 3px 3px 3px 0px #656565;
     -webkit-box-shadow: 3px 3px 3px 0px #656565;
     -o-box-shadow: 3px 3px 3px 0px #656565;
     box-shadow: 3px 3px 3px 0px #656565;
@@ -141,7 +142,6 @@ h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center, span
 }
 
 .shadow-inset {
-    -moz-box-shadow: inset 5px 5px 3px 0px #656565;
     -webkit-box-shadow: inset 5px 5px 3px 0px #656565;
     -o-box-shadow: inset 5px 5px 3px 0px #656565;
     box-shadow: inset 5px 5px 3px 0px #656565;
@@ -215,52 +215,76 @@ img {
 
 /*FLEXBOX*/
 .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
 }
 
 .box.center {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .box.y-center {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .box.between {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .box.around {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 .box.wrap {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .box.wrap-reverse {
-    flex-wrap: wrap-reverse;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
 }
 
 .box.down {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .box.up {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
 }
 
 .box.inverse {
-    flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
 }
 
 .box > .spread {
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
 }
 
 .box.auto > * {
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
 }
 
 .box > .right {
@@ -269,31 +293,45 @@ img {
 
 @media screen and (max-width: 1000px) {
     .box.tablet-column {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 }
 
 @media screen and (max-width: 768px) {
     .box.mobile-column {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 }
 
 /*animation and transition*/
 .transition-color {
+    -webkit-transition: color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out;
 }
 
 .hover-growth {
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    transition: -webkit-transform 0.2s ease-in-out;
     transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
 .hover-growth:hover {
-    transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
 }
 
 .hover-growth.transition-color {
+    -webkit-transition: color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
     transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
 
@@ -316,7 +354,6 @@ img {
     font-size: 1.05rem;
     border-radius: 0;
     -webkit-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     cursor: pointer;
     background-color: transparent;
@@ -371,7 +408,9 @@ img {
 
 @media all and (max-width: 768px) {
     .box.between {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .full-mobile {
