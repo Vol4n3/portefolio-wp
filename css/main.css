@@ -458,6 +458,9 @@ header .jc_container nav.box {
 {
     background-color: #111;
 }
+.blog-article .entry-content-page {
+    padding: 60px;
+}
 @media all and (max-width: 786px ) {
     .universe figure {
         margin: 20px;
@@ -465,5 +468,8 @@ header .jc_container nav.box {
 
     #chart-skill {
         height: 250px;
+    }
+    .blog-article .entry-content-page {
+        padding: 10px;
     }
 }

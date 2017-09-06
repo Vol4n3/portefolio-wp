@@ -11,8 +11,8 @@ $date = new Datetime( the_date( 'Y-m-d' ) );
 <main class="blog-article">
     <section class="jc_container">
         <div class="content bg-light ">
-            <div>
-                <div class="quarter float-left margin">
+            <div class="padding">
+                <div class="quarter-desktop float-left margin">
                     <p>le
                         <time datetime="<?php echo $date->format( 'Y-m-d' ); ?>"><?php echo $date->format( 'd F Y' ); ?> </time>
                     </p>

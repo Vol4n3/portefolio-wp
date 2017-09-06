@@ -43,16 +43,17 @@ function portfolio_setup() {
 add_action( 'after_setup_theme', 'portfolio_setup' );
 
 function sauvant_scripts() {
+	$verCache = '0.1';
 	/*CSS load*/
-	wp_enqueue_style( 'bootstrap', get_theme_file_uri( '/css/bootstrap.min.css' ), array(), '4.0.0', 'all' );
-	wp_enqueue_style( 'css_tools', get_theme_file_uri( '/css/css_tools.css' ), array(), '1.0', 'all' );
-	wp_enqueue_style( 'main', get_theme_file_uri( '/css/main.css' ), array(), '1.0', 'all' );
+	wp_enqueue_style( 'bootstrap', get_theme_file_uri( '/css/bootstrap.min.css' ), array(), $verCache, 'all' );
+	wp_enqueue_style( 'css_tools', get_theme_file_uri( '/css/css_tools.css' ), array(), $verCache, 'all' );
+	wp_enqueue_style( 'main', get_theme_file_uri( '/css/main.css' ), array(), $verCache, 'all' );
 	/*JS load*/
-	wp_enqueue_script( 'jquery', get_theme_file_uri( '/js/jquery.min.js' ), array(), '3.2.1', true );
-	wp_enqueue_script( 'app', get_theme_file_uri( '/js/main.js' ), array( 'jquery' ), '1.0', true );
+	wp_enqueue_script( 'jquery', get_theme_file_uri( '/js/jquery.min.js' ), array(), $verCache, true );
+	wp_enqueue_script( 'app', get_theme_file_uri( '/js/main.js' ), array( 'jquery' ), $verCache, true );
 	if ( is_single() ) {
-		wp_enqueue_style( 'highlight-atom', get_theme_file_uri( '/css/atom-one-dark.css' ), array(), '1.0', 'all' );
-		wp_enqueue_script( 'highlight', get_theme_file_uri( '/js/highlight.pack.js' ), array(), '1.0', true );
+		wp_enqueue_style( 'highlight-atom', get_theme_file_uri( '/css/atom-one-dark.css' ), array(), $verCache, 'all' );
+		wp_enqueue_script( 'highlight', get_theme_file_uri( '/js/highlight.pack.js' ), array(), $verCache, true );
 
 	}
 }
