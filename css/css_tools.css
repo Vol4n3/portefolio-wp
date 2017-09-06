@@ -41,7 +41,7 @@ canvas {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: #0077f7;
 }
 
 .jc_container > *:first-child {
@@ -87,10 +87,12 @@ a {
     padding-bottom: 90px;
 }
 
-a:hover, a:visited {
-    color: inherit;
+a:hover {
+    font-weight: 900;
 }
-
+a:visited{
+    color: #0698a9;
+}
 ul.list {
     padding: 0;
     margin: 0;
