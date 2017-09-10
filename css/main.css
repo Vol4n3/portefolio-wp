@@ -8,7 +8,7 @@
 
 * {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -17,9 +17,11 @@ body {
     line-height: 1.2;
     background-color: #111;
 }
-canvas{
+
+canvas {
     pointer-events: none;
 }
+
 .logo {
     width: 48px;
 }
@@ -62,7 +64,8 @@ canvas{
     width: 100%;
     z-index: 1000;
 }
-.footer{
+
+.footer {
     background-color: #e2e2e2;
 }
 
@@ -87,7 +90,7 @@ canvas{
     -webkit-transition: opacity 0.9s ease-in-out, max-height 0.6s ease;
     transition: opacity 0.9s ease-in-out, max-height 0.6s ease;
     -webkit-transition-delay: 0.75s;
-            transition-delay: 0.75s;
+    transition-delay: 0.75s;
     display: inline-block;
     max-height: 200px;
     margin-left: 60px;
@@ -170,7 +173,7 @@ canvas{
 
 .top-header h1 {
     color: #4d4d4d;
-    background-image: -webkit-linear-gradient(80deg,#4d4d4d,#e2e2e2);
+    background-image: -webkit-linear-gradient(80deg, #4d4d4d, #e2e2e2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-animation: invert 5s infinite linear;
@@ -253,7 +256,7 @@ header .jc_container nav.box {
 
 .nav-effect-cut > li:hover:before {
     -webkit-animation: width-effect-cut 3s ease-in-out infinite;
-            animation: width-effect-cut 3s ease-in-out infinite;
+    animation: width-effect-cut 3s ease-in-out infinite;
 }
 
 @-webkit-keyframes width-effect-cut {
@@ -318,9 +321,9 @@ header .jc_container nav.box {
 
 .nav-effect-cut > li:hover > .top {
     -webkit-animation: top-effect-cut 3s ease-in-out infinite;
-            animation: top-effect-cut 3s ease-in-out infinite;
+    animation: top-effect-cut 3s ease-in-out infinite;
     -webkit-animation-delay: 0.2s;
-            animation-delay: 0.2s;
+    animation-delay: 0.2s;
 }
 
 @-webkit-keyframes top-effect-cut {
@@ -330,19 +333,19 @@ header .jc_container nav.box {
     10% {
         left: 7px;
         -webkit-transform: rotate(2deg);
-                transform: rotate(2deg);
+        transform: rotate(2deg);
         -webkit-transform-origin: right;
-                transform-origin: right;
+        transform-origin: right;
     }
     40% {
         left: 7px;
         -webkit-transform-origin: right;
-                transform-origin: right;
+        transform-origin: right;
     }
     50% {
         left: 5px;
         -webkit-transform-origin: right;
-                transform-origin: right;
+        transform-origin: right;
 
     }
 }
@@ -354,19 +357,19 @@ header .jc_container nav.box {
     10% {
         left: 7px;
         -webkit-transform: rotate(2deg);
-                transform: rotate(2deg);
+        transform: rotate(2deg);
         -webkit-transform-origin: right;
-                transform-origin: right;
+        transform-origin: right;
     }
     40% {
         left: 7px;
         -webkit-transform-origin: right;
-                transform-origin: right;
+        transform-origin: right;
     }
     50% {
         left: 5px;
         -webkit-transform-origin: right;
-                transform-origin: right;
+        transform-origin: right;
 
     }
 }
@@ -378,9 +381,9 @@ header .jc_container nav.box {
 
 .nav-effect-cut > li:hover .bottom {
     -webkit-animation: bottom-effect-cut 3s ease-in-out infinite;
-            animation: bottom-effect-cut 3s ease-in-out infinite;
+    animation: bottom-effect-cut 3s ease-in-out infinite;
     -webkit-animation-delay: 0.2s;
-            animation-delay: 0.2s;
+    animation-delay: 0.2s;
 }
 
 @-webkit-keyframes bottom-effect-cut {
@@ -390,30 +393,30 @@ header .jc_container nav.box {
     10% {
         left: 3px;
         -webkit-transform: rotate(-120deg);
-                transform: rotate(-120deg);
+        transform: rotate(-120deg);
         -webkit-transform-origin: right;
-                transform-origin: right;
+        transform-origin: right;
     }
     40% {
         left: 3px;
         -webkit-transform: rotate(-75deg);
-                transform: rotate(-75deg);
+        transform: rotate(-75deg);
         -webkit-transform-origin: right;
-                transform-origin: right;
+        transform-origin: right;
     }
     50% {
         left: 5px;
         -webkit-transform: rotate(-120deg);
-                transform: rotate(-120deg);
+        transform: rotate(-120deg);
         -webkit-transform-origin: right;
-                transform-origin: right;
+        transform-origin: right;
     }
     70% {
         left: 5px;
         -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
+        transform: rotate(0deg);
         -webkit-transform-origin: right;
-                transform-origin: right;
+        transform-origin: right;
     }
 }
 
@@ -424,30 +427,30 @@ header .jc_container nav.box {
     10% {
         left: 3px;
         -webkit-transform: rotate(-120deg);
-                transform: rotate(-120deg);
+        transform: rotate(-120deg);
         -webkit-transform-origin: right;
-                transform-origin: right;
+        transform-origin: right;
     }
     40% {
         left: 3px;
         -webkit-transform: rotate(-75deg);
-                transform: rotate(-75deg);
+        transform: rotate(-75deg);
         -webkit-transform-origin: right;
-                transform-origin: right;
+        transform-origin: right;
     }
     50% {
         left: 5px;
         -webkit-transform: rotate(-120deg);
-                transform: rotate(-120deg);
+        transform: rotate(-120deg);
         -webkit-transform-origin: right;
-                transform-origin: right;
+        transform-origin: right;
     }
     70% {
         left: 5px;
         -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
+        transform: rotate(0deg);
         -webkit-transform-origin: right;
-                transform-origin: right;
+        transform-origin: right;
     }
 }
 
@@ -512,9 +515,9 @@ header .jc_container nav.box {
 
 #chart-skill .marking-level > div > i {
     -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
+    transform: rotate(-90deg);
     -webkit-transform-origin: left;
-            transform-origin: left;
+    transform-origin: left;
     display: inline-block;
     position: absolute;
     bottom: 0;
@@ -529,60 +532,67 @@ header .jc_container nav.box {
     padding-bottom: 20px;
     text-align: center;
 }
-.blog-article .content{
- min-height: 500px;
+
+.blog-article .content {
+    min-height: 500px;
 }
-.examples{
+
+.examples {
     position: fixed;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
-    top:0;
+    top: 0;
     z-index: 2000;
     display: none;
 }
-.examples .btn-close{
+
+.examples .btn-close {
     content: 'X';
     position: absolute;
-    top:20px;
+    top: 20px;
     right: 20px;
     display: inline-block;
     color: white;
     font-size: 4rem;
     cursor: pointer;
 }
-.examples .btn-close:hover{
-    color: #EA4335 ;
+
+.examples .btn-close:hover {
+    color: #EA4335;
 }
-.examples .sample{
-    background-color: #e2e2e2 ;
-}
-.code-example code{
-    overflow: auto;
-    height: 350px;
-}
-.code-example >div{
-    padding: 0 10px;
-}
-::-webkit-scrollbar-track
-{
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+
+.examples .sample {
     background-color: #e2e2e2;
 }
 
-::-webkit-scrollbar
-{
+.code-example code {
+    overflow: auto;
+    height: 350px;
+}
+
+.code-example > div {
+    padding: 0 10px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #e2e2e2;
+}
+
+::-webkit-scrollbar {
     width: 6px;
     background-color: #e2e2e2;
 }
 
-::-webkit-scrollbar-thumb
-{
+::-webkit-scrollbar-thumb {
     background-color: #111;
 }
+
 .blog-article .entry-content-page {
     padding: 60px;
 }
+
 @media all and (max-width: 786px ) {
     .universe figure {
         margin: 20px;
@@ -591,105 +601,143 @@ header .jc_container nav.box {
     #chart-skill {
         height: 250px;
     }
+
     .blog-article .entry-content-page {
         padding: 10px;
     }
+
     .logo {
         width: 20px;
     }
 }
-.universe figure img{
-    -webkit-transform: rotate3d(0,1,0,0deg);
-            transform: rotate3d(0,1,0,0deg);
+
+.universe figure img {
+    -webkit-transform: rotate3d(0, 1, 0, 0deg);
+    transform: rotate3d(0, 1, 0, 0deg);
     outline: 1px solid transparent;
     position: relative;
-    bottom:0;
+    bottom: 0;
 }
-.universe figure:hover img{
-    -webkit-animation: coinRotate 2.5s ease-in-out infinite ;
-            animation: coinRotate 2.5s ease-in-out infinite ;
+
+.universe figure:hover img {
+    -webkit-animation: coinRotate 2.5s ease-in-out infinite;
+    animation: coinRotate 2.5s ease-in-out infinite;
     -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
-.avatar-42,.avatar{
+
+.avatar-42, .avatar {
     width: 42px;
 }
-#commentform{
+
+#commentform {
     text-align: center;
 }
-#commentform label{
-    display: none;
+
+#commentform input:not([type=submit]),
+#commentform textarea
+{
+    padding:12px 5px 6px 5px;
 }
-.comment-body p{
+#commentform input[type=submit]{
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    letter-spacing: 0.15rem;
+    user-select: none;
+    color: #000;
+    border: 1px solid #000;
+    padding: .7rem 1.8rem;
+    font-size: 1.05rem;
+    border-radius: 0;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    background-color: transparent;
+}
+#commentform label {
+    position: absolute;
+    font-size: 0.8rem;
+}
+.comment-body p {
     background: #fff;
     padding: 20px;
     margin: 5px 5rem;
 }
+
 .comment-author {
     background: #4d4d4d;
     color: #e2e2e2;
     display: inline-block;
-    padding-right:5px;
+    padding-right: 5px;
 }
+
 @-webkit-keyframes coinRotate {
-    0%{
-        -webkit-transform: rotate3d(0,1,0,0deg);
-                transform: rotate3d(0,1,0,0deg);
-        bottom:0;
+    0% {
+        -webkit-transform: rotate3d(0, 1, 0, 0deg);
+        transform: rotate3d(0, 1, 0, 0deg);
+        bottom: 0;
     }
-    5%{
-        bottom:20px;
+    5% {
+        bottom: 20px;
     }
-    10%{
-        bottom:0;
+    10% {
+        bottom: 0;
     }
-    15%{
-        bottom:15px;
+    15% {
+        bottom: 15px;
     }
-    20%{
-        bottom:0;
-      }
-    25%{
-        bottom:10px;
+    20% {
+        bottom: 0;
     }
-    30%{
-        -webkit-transform: rotate3d(0,1,0,360deg);
-                transform: rotate3d(0,1,0,360deg);
-        bottom:0;
+    25% {
+        bottom: 10px;
     }
-    100%{
-        -webkit-transform: rotate3d(0,1,0,360deg);
-                transform: rotate3d(0,1,0,360deg);
+    30% {
+        -webkit-transform: rotate3d(0, 1, 0, 360deg);
+        transform: rotate3d(0, 1, 0, 360deg);
+        bottom: 0;
+    }
+    100% {
+        -webkit-transform: rotate3d(0, 1, 0, 360deg);
+        transform: rotate3d(0, 1, 0, 360deg);
     }
 }
+
 @keyframes coinRotate {
-    0%{
-        -webkit-transform: rotate3d(0,1,0,0deg);
-                transform: rotate3d(0,1,0,0deg);
-        bottom:0;
+    0% {
+        -webkit-transform: rotate3d(0, 1, 0, 0deg);
+        transform: rotate3d(0, 1, 0, 0deg);
+        bottom: 0;
     }
-    5%{
-        bottom:20px;
+    5% {
+        bottom: 20px;
     }
-    10%{
-        bottom:0;
+    10% {
+        bottom: 0;
     }
-    15%{
-        bottom:15px;
+    15% {
+        bottom: 15px;
     }
-    20%{
-        bottom:0;
-      }
-    25%{
-        bottom:10px;
+    20% {
+        bottom: 0;
     }
-    30%{
-        -webkit-transform: rotate3d(0,1,0,360deg);
-                transform: rotate3d(0,1,0,360deg);
-        bottom:0;
+    25% {
+        bottom: 10px;
     }
-    100%{
-        -webkit-transform: rotate3d(0,1,0,360deg);
-                transform: rotate3d(0,1,0,360deg);
+    30% {
+        -webkit-transform: rotate3d(0, 1, 0, 360deg);
+        transform: rotate3d(0, 1, 0, 360deg);
+        bottom: 0;
+    }
+    100% {
+        -webkit-transform: rotate3d(0, 1, 0, 360deg);
+        transform: rotate3d(0, 1, 0, 360deg);
     }
 }
