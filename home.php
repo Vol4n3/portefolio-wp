@@ -300,7 +300,7 @@ get_footer();
         var scene = new Game('stars');
 
         function initStars() {
-            for (let i = 0; i < scene.getWidth() / 10; i++) {
+            for (let i = 0; i < scene.getWidth() / 40; i++) {
                 scene.add('star' + i, new Star(Math.random() * scene.getWidth(), Math.random() * scene.getHeight()));
             }
         }
