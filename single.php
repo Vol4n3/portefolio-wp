@@ -98,7 +98,7 @@ $date = new Datetime( get_the_date( 'Y-m-d' ) );
                     echo get_sub_field( 'css' );
                      ?>
                 </style>
-                <div class="sample">
+                <div class="sample padding">
 					<?php
 					echo get_sub_field( 'html' );
 					?>
