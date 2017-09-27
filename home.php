@@ -49,8 +49,12 @@ get_header();
             <h2 class="light margin-y">Code is my passion</h2>
             <p>Website work in progress</p>
             <div>
-                <span class="btn margin-x btn-primary ">getCV('pdf');</span>
-                <span class="btn margin-x text-uppercase">Hire me</span>
+                <a href="<?php echo get_template_directory_uri()?>/files/Julien_COEURVOLAN_CV_SEPTEMBRE_2017.docx" target="_blank">
+                    <span class="btn margin-x btn-primary ">getCV('Word');</span>
+                </a>
+                <a href="mailto:jcvolan@gmail.com">
+                    <span class="btn margin-x text-uppercase">Hire me</span>
+                </a>
             </div>
         </div>
     </section>
